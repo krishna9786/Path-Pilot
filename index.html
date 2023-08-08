@@ -1,0 +1,89 @@
+<html>
+  <head>
+    <title>Path Pilot</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link id="cssTheme" rel="stylesheet" href="public/styling/cssBasic.css"/>
+    <link rel="shortcut icon" type="image/png" href="public/styling/d.png"/>
+  </head>
+  <body style="background-color: #141414; color: white;">
+    <div id='navbarDiv'>
+     <nav class="navbar navbar-inverse" style="background-color:black ; color: white;">
+       <div class="container-fluid">
+         <div class="navbar-header">
+           <a id="refreshButton" class="navbar-brand" href="#">Path Pilot</a>
+         </div>
+         <ul class="nav navbar-nav">
+           <li class="dropdown">
+             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Algorithms
+             <span class="caret"></span></a>
+             <ul class="dropdown-menu">
+               <li id='startButtonDijkstra'><a href="#">Dijkstra's Algorithm</a></li>
+               <li id='startButtonAStar2'><a href="#">A* Search</a></li>
+               <li id='startButtonGreedy'><a href="#">Greedy Best-first Search</a></li>
+               <li id='startButtonAStar'><a href="#">Swarm Algorithm</a></li>
+               <li id='startButtonAStar3'><a href="#">Convergent Swarm Algorithm</a></li>
+               <li id='startButtonBidirectional'><a href="#">Bidirectional Swarm Algorithm</a></li>
+               <li id='startButtonBFS'><a href="#">Breadth-first Search</a></li>
+               <li id='startButtonDFS'><a href="#">Depth-first Search</a></li>
+             </ul>
+           </li>
+           <li class="dropdown">
+             <a class="dropdown-toggle" data-toggle="dropdown" href="#"> Patterns
+             <span class="caret"></span></a>
+             <ul class="dropdown-menu">
+               <li id='startButtonCreateMazeTwo'><a href="#">Recursive Division</a></li>
+               <li id='startButtonCreateMazeThree'><a href="#">Recursive Division (vertical skew)</a></li>
+               <li id='startButtonCreateMazeFour'><a href="#">Recursive Division (horizontal skew)</a></li>
+               <li id='startButtonCreateMazeOne'><a href="#">Basic Random Maze</a></li>
+               <li id='startButtonCreateMazeWeights'><a href="#">Basic Weight Maze</a></li>
+               <li id='startStairDemonstration'><a href="#">Simple Stair Pattern</a></li>
+             </ul>
+           </li>
+           <li style="background-color: #000000;" id='startButtonAddObject'><a href="#">Add Nodes</a></li>
+           <li id='startButtonStart'><button id="actualStartButton" class="btn btn-default navbar-btn" type="button">Visualize!</button></li>
+           <li style="background-color: #000000;" id='startButtonClearBoard'><a href="#">Clear Board</a></li>
+           <li style="background-color: #000000;" id='startButtonClearWalls'><a href="#">Clear Walls &amp; Weights</a></li>
+           <li style="background-color: #000000;" id='startButtonClearPath'><a href="#">Clear Path</a></li>
+           <li class="dropdown">
+             <a id="adjustSpeed" class="dropdown-toggle" data-toggle="dropdown" href="#">Speed: Fast
+             <span class="caret"></span></a>
+             <ul class="dropdown-menu">
+               <li id='adjustFast'><a href="#">Fast</a></li>
+               <li id='adjustAverage'><a href="#">Average</a></li>
+               <li id='adjustSlow'><a href="#">Slow</a></li>
+             </ul>
+           </li>
+         </ul>
+       </div>
+     </nav>
+   </div>
+    <div id="tutorial" style="align-items: center;" >
+      <h3>Welcome to Path Pilot!</h3>
+      <h6>Select an algorithm from the dropdown menu, then choose "Mazes" as the option. Click on the "Visualize" button at the center, and you're all set!</h6>
+      <img style="width: 300px;" height="300px" id="mainTutorialImage" src="public/styling/d.png">
+      <button style="margin-left: 280px;" id="skipButton" class="btn btn-default navbar-btn" type="button">Understood!!</button>
+    </div>
+    <div id='mainGrid'>
+      <div id='mainText'>
+        <ul>
+          <li>
+            <div class="start"></div>Start Node</li>
+          <li>
+            <div class="target"></div>Target Node</li>
+          
+          <li>
+            <div class="visited"></div>Visited Nodes</li>
+          <li>
+            <div class="shortest-path"></div>Shortest-path Node</li>
+          <li>
+            <div class="wall"></div>Wall Node</li>
+        </ul>
+      </div>
+      <div id="algorithmDescriptor" style="background-color: #1b1b1b; color: yellowgreen;">Choose an algorithm and create a visual representation of it!</div>
+      <table id='board'/>
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src='public/browser/bundle.js'></script>
+</html>
