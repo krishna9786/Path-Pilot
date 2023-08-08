@@ -34,4 +34,11 @@
 * 📱 Responsive and Accessible: No matter the device – be it a computer, tablet, or smartphone – "Path Pilot" is responsive and accessible, allowing you to embark on your pathfinding journey wherever you are.
 
 # ScreanShots
-![]()
+## When you enter 
+![](Images/1.png)
+## UI
+![](Images/2.png)
+## Pattern or Walls
+![](Images/3.png)
+## Shortest Path
+![](Images/4.png)
